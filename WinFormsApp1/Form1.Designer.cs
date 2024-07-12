@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Form1
+    partial class ddddddddddd
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            LoadingBar = new ProgressBar();
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // LoadingBar
+            // 
+            LoadingBar.Location = new Point(121, 280);
+            LoadingBar.Name = "LoadingBar";
+            LoadingBar.Size = new Size(519, 23);
+            LoadingBar.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(300, 211);
+            label1.Name = "label1";
+            label1.Size = new Size(157, 50);
+            label1.TabIndex = 1;
+            label1.Text = "Loading";
+            label1.Click += label1_Click;
+            // 
+            // ddddddddddd
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(749, 528);
+            Controls.Add(label1);
+            Controls.Add(LoadingBar);
+            Name = "ddddddddddd";
+            Text = "TEST";
+            Load += ddddddddddd_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private ProgressBar LoadingBar;
+        private Label label1;
     }
 }
